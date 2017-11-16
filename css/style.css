@@ -33,7 +33,7 @@ img{
 }
 
 .logo{grid-area: logo;}
-.social{grid-area: social;}
+.social{grid-area: social; align-self: center;}
 .banner{grid-area: banner;}
 .sidebar{grid-area: sidebar; padding: 10px;}
 .content{grid-area: content; padding: 10px;}
@@ -85,10 +85,18 @@ img{
 	.wrapper{
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-areas: 
-		"logo logo social social"
+		"logo logo . social"
 		"banner banner banner banner"
 		"content content content content"
 		"sidebar sidebar sidebar sidebar"
 		"footer footer footer footer";
+	}
+	.social{
+		font-size: 50px;
+		margin: 20px;
+
+	}
+	.fa {
+		margin: 5px;
 	}
 }
